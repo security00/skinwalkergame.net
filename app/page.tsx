@@ -1,65 +1,179 @@
 import Image from "next/image";
+const crazyGamesEmbed = "https://g2.igroutka.ru/lib/crazy/games/skinwalker/";
+
+const faq = [
+  {
+    q: "Where can I play the Skinwalker game for free online?",
+    a: "Use the CrazyGames browser build for instant play, or grab the Steam demo for higher fidelity.",
+  },
+  {
+    q: "Is there controller support?",
+    a: "Yes. Steam Input profiles map seamlessly; browser builds work best with Xbox layout.",
+  },
+  {
+    q: "What are the best platforms?",
+    a: "PC leads for visuals; PS5 gets DualSense haptics; Xbox offers solid performance and Game Pass trials.",
+  },
+  {
+    q: "How do I avoid jumpscare fatigue?",
+    a: "Use the new Night Scout accessibility preset: calmer audio spikes, clearer cues, and balanced luminance.",
+  },
+];
+
+const searchCoverage = [
+  {
+    q: "skinwalker game free online",
+    a: "Play the browser embed instantly; if blocked, the Steam demo link is one click away.",
+  },
+  {
+    q: "skinwalker game how to play",
+    a: "Controls and survival tips sit under the trailer—no separate tab-hopping required.",
+  },
+  {
+    q: "skinwalker hunt tips",
+    a: "Curated clips and quick-callout strategies reduce bounce and keep the session going.",
+  },
+  {
+    q: "skinwalker browser vs steam",
+    a: "We show which build you’re loading (browser or Steam) and surface uptime notes before you click.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="page">
+      <header className="shell topbar">
+        <a className="logo-lockup" href="/">
+          <Image src="/logo.png" alt="Skinwalker Game" width={54} height={32} priority />
+          <span>Skinwalker Game</span>
+        </a>
+        <nav className="nav-links" aria-label="Primary">
+          <a href="#games">Games</a>
+          <a href="/shift-at-midnight">Shift at Midnight</a>
+          <a href="#about">About</a>
+        </nav>
+      </header>
+
+      <main className="shell">
+        <section className="section hero" id="games">
+            <div className="hero-block">
+              <div className="hero-frame">
+                <div className="hero-embed">
+                  <iframe
+                    id="game-iframe"
+                    src={crazyGamesEmbed}
+                    title="Skinwalker game playable embed"
+                    loading="eager"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-top-navigation-by-user-activation"
+                    referrerPolicy="no-referrer"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            <div className="hero-cta">
+              <div>
+                <h1 className="hero-title">Skinwalker Hunt</h1>
+                <p>
+                  Play the browser build right here. If you prefer higher fidelity, jump to Steam; otherwise start
+                  moving before the creature tracks you.
+                </p>
+                <div className="hero-meta">
+                  <span className="pill">Browser · No install</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section" aria-label="Shift at Midnight info">
+          <div className="section-header">
+            <div>
+              <div className="section-subtitle">New page</div>
+              <h2 className="section-title">Shift at Midnight info hub</h2>
+            </div>
+            <a className="text-link" href="/shift-at-midnight">
+              Open the guide →
+            </a>
+          </div>
+          <p>
+            Indie co-op horror about vetting doppelgangers during a night-shift convenience store run. Requires a
+            download (no browser build). Tap above for how to play, download options (Steam co-op demo / Itch.io solo
+            demo), and a TikTok highlight reel.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        </section>
+
+        <section className="section row" id="about">
+          <div>
+            <div className="section-header">
+              <div>
+                <div className="section-subtitle">FAQ & SEO anchors</div>
+                <h2 className="section-title">Answer the questions players search</h2>
+              </div>
+            </div>
+            <div className="faq">
+              {faq.map((item) => (
+                <div className="faq-item" key={item.q}>
+                  <strong>{item.q}</strong>
+                  <p>{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className="section-header" style={{ marginBottom: 8 }}>
+              <div>
+                <div className="section-subtitle">Search coverage</div>
+                <h2 className="section-title">Queries we answer instantly</h2>
+              </div>
+            </div>
+            <div className="faq">
+              {searchCoverage.map((item) => (
+                <div className="faq-item" key={item.q}>
+                  <strong>{item.q}</strong>
+                  <p>{item.a}</p>
+                </div>
+              ))}
+            </div>
+            <div className="chip-row" style={{ marginTop: 12 }}>
+              <span className="chip">Instant answers</span>
+              <span className="chip">Low bounce</span>
+              <span className="chip">Mobile-first</span>
+              <span className="chip">SEO intent mapped</span>
+            </div>
+          </div>
+        </section>
+
+        {/* TikTok clips removed on home; kept on /shift-at-midnight */}
       </main>
+
+      <footer className="shell footer">
+        <div className="footer-grid">
+          <div>
+            <div className="logo-lockup" style={{ padding: "10px 12px" }}>
+              <Image src="/logo.png" alt="Skinwalker Game" width={54} height={32} />
+              <span>Skinwalker Game</span>
+            </div>
+            <p style={{ marginTop: 10 }}>
+              Modern horror hub built for long sessions: curated games, fast guides, and respectful storytelling.
+            </p>
+          </div>
+          <div>
+            <strong>Quick links</strong>
+            <div className="footer-links">
+              <a href="#games">Games</a>
+              <a href="/shift-at-midnight">Shift at Midnight</a>
+              <a href="#about">About</a>
+              <a href="/privacy">Privacy</a>
+              <a href="/terms">Terms</a>
+              <a href="mailto:support@skinwalkergame.net">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div style={{ marginTop: 18, color: "var(--text-muted)" }}>
+          © 2025 Skinwalker Game. Fictional horror hub — no real-world cultural references. Built for the curious.
+        </div>
+      </footer>
     </div>
   );
 }
