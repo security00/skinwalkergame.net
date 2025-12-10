@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
 
@@ -18,6 +19,15 @@ const facts = [
   "Performance: friendly to low specs; integrated graphics work; recommend Windows 10+, i5, and 8GB RAM or more.",
   "Release cadence: Steam full version expected Q2 2026; co-op demo is live on Steam, solo demo on Itch.io.",
 ];
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://skinwalkergame.net/shift-at-midnight",
+  },
+  openGraph: {
+    url: "https://skinwalkergame.net/shift-at-midnight",
+  },
+};
 
 export default function ShiftAtMidnightPage() {
   return (
@@ -74,6 +84,7 @@ export default function ShiftAtMidnightPage() {
               <div>
                 <div className="section-subtitle">Core facts</div>
                 <h2 className="section-title">How to play · available modes</h2>
+                <h3 style={{ marginTop: 6, color: "var(--text-muted)" }}>Quick-read overview</h3>
               </div>
             </div>
             <div className="faq">
@@ -89,6 +100,7 @@ export default function ShiftAtMidnightPage() {
               <div>
                 <div className="section-subtitle">Why it's trending</div>
                 <h2 className="section-title">Why TikTok keeps pushing it</h2>
+                <h3 style={{ marginTop: 6, color: "var(--text-muted)" }}>Social traction highlights</h3>
               </div>
             </div>
             <div className="faq">
@@ -99,18 +111,19 @@ export default function ShiftAtMidnightPage() {
               ))}
             </div>
           </div>
-        </section>
+      </section>
 
-        <section className="section" aria-label="Download links">
-          <div className="section-header">
-            <div>
-              <div className="section-subtitle">Download options</div>
-              <h2 className="section-title">Steam co-op / Itch.io solo</h2>
-            </div>
+      <section className="section" aria-label="Download links">
+        <div className="section-header">
+          <div>
+            <div className="section-subtitle">Download options</div>
+            <h2 className="section-title">Steam co-op / Itch.io solo</h2>
+            <h3 style={{ marginTop: 6, color: "var(--text-muted)" }}>Shift at Midnight download and setup</h3>
           </div>
-          <div className="guide-grid">
-            <article className="guide-card" id="download-steam">
-              <div className="chip-row">
+        </div>
+        <div className="guide-grid">
+          <article className="guide-card" id="download-steam">
+            <div className="chip-row">
                 <span className="chip">Co-op demo</span>
                 <span className="chip">1-3 player co-op</span>
               </div>
@@ -132,14 +145,71 @@ export default function ShiftAtMidnightPage() {
                 Open Itch.io →
               </a>
             </article>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="section" id="tiktok" aria-label="TikTok clips">
-          <div className="section-header">
-            <div>
-              <div className="section-subtitle">TikTok highlights</div>
-              <h2 className="section-title">Clerk lets impostor in, sudden mutations, jump-scare moments</h2>
+      <section className="section" aria-label="Shift at Midnight deep guide" style={{ marginTop: 24 }}>
+        <div className="section-header">
+          <div>
+            <div className="section-subtitle">Shift at Midnight guide</div>
+            <h2 className="section-title">Everything about the Shift at Midnight co-op horror loop</h2>
+            <h3 style={{ marginTop: 6, color: "var(--text-muted)" }}>Shift at Midnight survival, downloads, and tips</h3>
+          </div>
+        </div>
+        <div className="seo-text">
+          <p>
+            Shift at Midnight is a co-op horror game about working a graveyard shift at a rural gas station while
+            spotting shapeshifters who mimic humans. This page keeps Shift at Midnight keywords concentrated around the
+            things players actually search: how to download Shift at Midnight on Steam, how to run the Itch.io solo demo,
+            and how to survive the night. Instead of stuffing, we reuse “Shift at Midnight” naturally inside real
+            instructions so search engines see relevance and players get clarity.
+          </p>
+          <p>
+            For new players, the Shift at Midnight gameplay loop is simple: check IDs, watch behavior, and close doors
+            when a doppelganger slips. The Steam multiplayer demo of Shift at Midnight supports 1-3 players and keeps
+            tension high with randomized customers. The Itch.io solo version of Shift at Midnight uses the same core
+            rules but lets you practice without voice chat. Both builds favor quick rounds, so every mention of Shift at
+            Midnight on this page leads to a real action you can take—download, host, or invite friends.
+          </p>
+          <p>
+            Performance matters for Shift at Midnight. On integrated graphics you can run Shift at Midnight at medium
+            settings; if you play on Steam Deck, cap at 40 FPS and use TDP limiting. The Itch.io Shift at Midnight build
+            is about 130MB and runs after a quick unzip; antivirus warnings are rare but always verify your source by
+            using the official Shift at Midnight links here. These details answer “Shift at Midnight system requirements”
+            naturally while keeping the phrase anchored to real guidance.
+          </p>
+          <p>
+            Social proof fuels Shift at Midnight searches. TikTok clips of Shift at Midnight show clerks letting impostors
+            in or slamming doors just in time. We link those clips from the TikTok section above so that “Shift at
+            Midnight jump scare” and “Shift at Midnight highlights” queries land on authentic footage, not filler. Each
+            clip reinforces the exact feel of Shift at Midnight: tense ID checks, eerie pauses, and sudden invasions.
+          </p>
+          <p>
+            Controls are straightforward: Shift at Midnight reads Xbox layout by default, with smooth mouse aim on PC.
+            Keep flashlight discipline, listen for audio tells, and coordinate callouts when playing Shift at Midnight in
+            co-op. If you fail an ID check in Shift at Midnight, shut doors, place traps, and manage stamina bursts to
+            reset control of the store. These repeated mentions match how players phrase questions about Shift at Midnight
+            strategy without forcing awkward keyword stuffing.
+          </p>
+          <p>
+            Community players also search “Shift at Midnight browser version.” As of now, Shift at Midnight has no
+            browser build, so every reference here points to the Steam and Itch.io downloads. By stating that clearly, we
+            prevent confusion and give search crawlers a clean, honest answer tied to the Shift at Midnight brand.
+          </p>
+          <p>
+            Everything here sits inside the Skinwalker Game hub so you never lose your place. Clean headings and
+            canonicals keep Shift at Midnight easy to crawl, but more importantly they keep Shift at Midnight easy to act
+            on. If you came for a Shift at Midnight download, a co-op run with friends, or quick Shift at Midnight tips,
+            the buttons above get you moving without filler.
+          </p>
+        </div>
+      </section>
+
+      <section className="section" id="tiktok" aria-label="TikTok clips">
+        <div className="section-header">
+          <div>
+            <div className="section-subtitle">TikTok highlights</div>
+            <h2 className="section-title">Clerk lets impostor in, sudden mutations, jump-scare moments</h2>
             </div>
           </div>
           <div

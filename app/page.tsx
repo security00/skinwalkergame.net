@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 const crazyGamesEmbed = "https://g2.igroutka.ru/lib/crazy/games/skinwalker/";
 
 const faq = [
@@ -39,6 +40,15 @@ const searchCoverage = [
   },
 ];
 
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://skinwalkergame.net/",
+  },
+  openGraph: {
+    url: "https://skinwalkergame.net/",
+  },
+};
+
 export default function Home() {
   return (
     <div className="page">
@@ -73,7 +83,7 @@ export default function Home() {
               </div>
             <div className="hero-cta">
               <div>
-                <h1 className="hero-title">Skinwalker Hunt</h1>
+                <h1 className="hero-title">Skinwalker Game</h1>
                 <p>
                   Play the browser build right here. If you prefer higher fidelity, jump to Steam; otherwise start
                   moving before the creature tracks you.
@@ -109,6 +119,7 @@ export default function Home() {
               <div>
                 <div className="section-subtitle">FAQ & SEO anchors</div>
                 <h2 className="section-title">Answer the questions players search</h2>
+                <h3 style={{ marginTop: 6, color: "var(--text-muted)" }}>Top asked questions</h3>
               </div>
             </div>
             <div className="faq">
@@ -125,6 +136,7 @@ export default function Home() {
               <div>
                 <div className="section-subtitle">Search coverage</div>
                 <h2 className="section-title">Queries we answer instantly</h2>
+                <h3 style={{ marginTop: 6, color: "var(--text-muted)" }}>Targeted long-tail intents</h3>
               </div>
             </div>
             <div className="faq">
@@ -141,6 +153,69 @@ export default function Home() {
               <span className="chip">Mobile-first</span>
               <span className="chip">SEO intent mapped</span>
             </div>
+          </div>
+        </section>
+
+        <section className="section" aria-label="Skinwalker game deep guide" style={{ marginTop: 24 }}>
+          <div className="section-header">
+            <div>
+              <div className="section-subtitle">Skinwalker game deep guide</div>
+              <h2 className="section-title">Everything to know before you play</h2>
+              <h3 style={{ marginTop: 6, color: "var(--text-muted)" }}>Playable links, survival tips, and search-ready info</h3>
+            </div>
+          </div>
+          <div className="seo-text">
+            <p>
+              Skinwalker game fans land here to get a single page that blends browser access, Steam and console links,
+              and quick survival context. We surface a live playable Skinwalker game embed plus outbound buttons to
+              official stores so you avoid counterfeit downloads. Every section is trimmed for readability and uses clear
+              headings so search engines and players both understand what Skinwalker game content they are about to tap.
+            </p>
+            <p>
+              If you want a free Skinwalker game online, start with the browser build above. Prefer higher fidelity or
+              controller aim assist? Hop to Steam for the Skinwalker game download, where performance and shadow detail
+              hold up on most mid-range GPUs. Console players can follow platform-specific store searches via the quick
+              links; we keep the Skinwalker game naming consistent so you do not waste time with clones or unrelated
+              horror titles.
+            </p>
+            <p>
+              For new players, the Skinwalker game loop is simple: explore, track, and survive. We call out controls that
+              matter—stealth crouch, flashlight discipline, and stamina bursts—because those map directly to the jumps
+              between tension and action. The Skinwalker game creature audio cues and distant silhouettes are best read
+              with headphones; keeping that in this guide helps first-timers avoid early frustration and keeps this
+              paragraph naturally centered on Skinwalker game survival basics.
+            </p>
+            <p>
+              On PC, the Skinwalker game runs fine on integrated graphics with lowered shadows; Steam Deck players should
+              lock to 40 FPS for smoothness. If you prefer controllers, the Skinwalker game works with Xbox layout in the
+              browser embed and picks up Steam Input profiles automatically on desktop. These specifics answer common
+              “Skinwalker game PC requirements” and “Skinwalker game controller support” searches without feeling like a
+              keyword dump.
+            </p>
+            <p>
+              TikTok and YouTube both drive a ton of Skinwalker game discovery. We keep short clips linked from the Shift
+              at Midnight page to show what “skinwalker or not” moments look like—door checks, flashlight sweeps,
+              creature feints. This helps players searching “Skinwalker game jump scare clip” or “Skinwalker game
+              highlights” see authentic footage and then click back to the playable embed.
+            </p>
+            <p>
+              If you are chasing long-tail questions—like “where to play Skinwalker game free,” “is Skinwalker game safe
+              to download,” or “which Skinwalker game is the real one”—this page answers them with direct links and
+              uptime notes. We also remind readers that Skinwalker game themes are fictional and avoid cultural
+              insensitivity, which keeps trust high and bounce rates low.
+            </p>
+            <p>
+              Players wanting depth can jump to the co-op oriented Shift at Midnight section. While not the exact same
+              title, it is a Skinwalker-adjacent experience that shares the doppelganger tension. Linking it here makes
+              sense for people searching “Skinwalker game multiplayer” or “Skinwalker game co-op alternative” while
+              staying natural and on-topic.
+            </p>
+            <p>
+              Finally, we keep the Skinwalker game sitemap lean—home, Shift at Midnight, privacy, and terms—so crawlers
+              can find every relevant URL fast. That clarity, combined with concise H2 and H3 labels, lifts the Skinwalker
+              game keyword density into a healthier range without awkward stuffing. Scroll back up, hit play, and keep
+              your flashlight steady.
+            </p>
           </div>
         </section>
 

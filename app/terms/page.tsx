@@ -1,5 +1,15 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://skinwalkergame.net/terms",
+  },
+  openGraph: {
+    url: "https://skinwalkergame.net/terms",
+  },
+};
 
 export default function TermsPage() {
   const narrowSection = { maxWidth: 900, margin: "0 auto" };

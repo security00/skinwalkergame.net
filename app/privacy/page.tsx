@@ -1,5 +1,15 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://skinwalkergame.net/privacy",
+  },
+  openGraph: {
+    url: "https://skinwalkergame.net/privacy",
+  },
+};
 
 export default function PrivacyPage() {
   return (
